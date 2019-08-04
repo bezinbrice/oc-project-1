@@ -1,0 +1,160 @@
+			/*WEBAGENCY CSS*/
+
+
+@font-face
+{
+	font-family:'fontawesome';
+	src:url('fonts/fontawesome-webfont.ttf');
+	src:url('fonts/fontawesome-webfont.eot'),
+		url('fonts/fontawesome-webfont.svg'),
+		url('fonts/FontAwesome.otf'),
+		url('fonts/fontawesome-webfont.woff');
+}
+
+@font-face
+{
+	font-family:'glyphicons';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('fonts/glyphicons-halflings-regular.svg#BallparkWeiner') format('svg');
+}		
+
+@font-face
+{
+	font-family:"Roboto-Bold";
+	src: url('fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight:bold;
+	font-style:normal;
+}
+
+body
+{
+	font-family:"Roboto-Bold";
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+			/*PAGE D'ACCUEIL*/
+
+#accueil
+{
+	
+	height: 100%;
+	width: 100%;
+	
+}
+
+#accueil header
+{
+	display: flex;
+	
+	align-items: center;
+	background-color: white;
+	height: 90px;
+
+}
+
+
+
+#logo
+{
+	margin-left: 230px;
+}
+
+
+#accueil header ul
+{
+	
+	display: flex;
+	list-style:none;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: fixed; top: 0px; left: 1000px;
+	height: 90px;
+	width: 600px;
+	margin: auto;
+	border-radius: 3px;
+	
+}
+
+#accueil header li
+{
+	
+	font-size: 0.9em;
+	color:#919191;
+	line-height: 90px;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	height: 100%;
+	
+}
+
+#accueil header li:hover
+{
+	border-top: 3px  #6adcf4  groove;
+	color: #727272;
+	
+}
+
+#accueil header a
+{
+	text-decoration: none;
+	color:#919191;
+}
+
+section
+{
+	background:url("images/slider/bg1.jpg") no-repeat;
+	
+	height:1280px;
+	width: 100%;
+	
+	
+}
+
+#description
+{
+	color:white;
+	position:absolute;
+	margin-left:230px;
+	margin-top:150px;
+	font-size: 1.5em;
+	flex-wrap: warp;
+	width: 600px;
+}
+
+h1
+{
+	text-transform:uppercase;
+	
+}
+	
+strong
+{
+	color: 	#5FAFC0;
+}
+
+#description p
+{
+	font-size: 0.6em;
+	padding-bottom: 10px;
+}
+
+#description a
+{
+	text-decoration: none;
+	background-color: #5FAFC0;
+	color: white;
+	font-size: 0.7em;
+	padding: 9px 12px;
+	
+	border-radius: 4px;
+	border-bottom: 2px  #559baa solid;
+	
+}
