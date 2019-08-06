@@ -1,0 +1,232 @@
+        /*WEBAGENCY CSS*/
+ 
+ 
+@font-face
+{
+    font-family:'fontawesome';
+    src:url('fonts/fontawesome-webfont.ttf');
+    src:url('fonts/fontawesome-webfont.eot'),
+        url('fonts/fontawesome-webfont.svg'),
+        url('fonts/FontAwesome.otf'),
+        url('fonts/fontawesome-webfont.woff');
+}
+ 
+@font-face
+{
+    font-family:'glyphicons';
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('fonts/glyphicons-halflings-regular.svg#BallparkWeiner') format('svg');
+}      
+ 
+@font-face
+{
+    font-family:"Roboto-Bold";
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight:bold;
+    font-style:normal;
+}
+ 
+@font-face
+{
+    font-family:'Roboto-Black';
+    src: url('fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   
+    font-family:'Roboto-Light';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face
+{
+    font-family:'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+body
+{
+    font-family:'Roboto-Bold','Trebuchet MS', Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+ 
+            /*PAGE D'ACCUEIL*/
+ 
+#accueil
+{
+    width: 100%;
+  
+}
+ 
+#accueil header
+{
+    position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+	top: 0px;
+	z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+	width: 100%;
+	height: 6vw;
+}
+ 
+#logo
+{
+    margin-left: 12%;
+	height: 3.3vw;
+}
+ 
+ 
+#accueil header ul
+{
+    display: flex;
+ 
+    list-style:none;
+    align-items: center;
+	margin: auto;
+    margin-right: 15%;
+}
+ 
+#accueil header li
+{
+   
+    font-size: 0.9vw;
+    color:#919191;
+    line-height: 6vw;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+ 
+#accueil header li:hover
+{
+    border-top: 3px  #6adcf4  groove;
+    color: #727272;
+}
+ 
+#accueil header a
+{
+    text-decoration: none;
+    color:#919191;
+}
+ 
+                /*Accueil Slider*/
+ 
+ 
+#background
+{
+    width: 100%;
+}
+ 
+section
+{
+	 position: relative;
+	 width: 100%
+}
+ 
+ 
+#description
+{
+    color:white;
+	position: absolute;
+	top: 25%;
+	left: 12%;
+	width: 36%;
+    font-size: 1.5vw; 
+}
+ 
+h1
+{
+    text-transform:uppercase;
+    margin-bottom: 0px;
+}
+   
+strong
+{
+    color:  #5FAFC0;
+}
+ 
+#description p
+{
+    font-size: 1.2vw;
+	
+ 
+	   
+    padding-bottom: 4%;
+}
+ 
+#description a
+{
+    font-family:'Roboto-Medium';
+    text-decoration: none;
+    background-color: #5FAFC0;
+    color: white;
+    font-size: 0.9em;
+    padding: 9px 12px;
+    border-radius: 4px;
+    border-bottom: 2px  #559baa solid;
+}
+ 
+ 
+                /* Chevrons côté */
+				
+#arrow-container
+{
+	position: absolute;
+	top: 45%;
+	height: 11%;
+	overflow : hidden;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+   
+#left_circle
+{  
+    background: url("assets/images/icones/circle-solid.svg") no-repeat;
+    position: relative;
+    right: 1.5%;
+    width: 4.5%;
+}
+ 
+#left
+{
+    background:url("assets/images/icones/chevron-left-solid.svg") no-repeat;
+    position: absolute;
+	top: 32%;
+    right: 30%;
+    height: 32%;
+    width: 25%;
+   
+}
+ 
+#right_circle
+{  
+    background: url("assets/images/icones/circle-solid.svg") no-repeat;
+    position: relative;
+    left: 2%;
+    width: 4.5%;
+}
+ 
+#right
+{
+    background:url("assets/images/icones/chevron-right-solid.svg") no-repeat;
+    position: absolute;
+	top: 32%;
+    left: 25%;
+    height: 32%;
+    width: 25%;
+   
+}
