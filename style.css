@@ -4,27 +4,27 @@
 @font-face
 {
     font-family:'fontawesome';
-    src:url('fonts/fontawesome-webfont.ttf');
-    src:url('fonts/fontawesome-webfont.eot'),
-        url('fonts/fontawesome-webfont.svg'),
-        url('fonts/FontAwesome.otf'),
-        url('fonts/fontawesome-webfont.woff');
+    src:url('assets/fonts/fontawesome-webfont.ttf');
+    src:url('assets/fonts/fontawesome-webfont.eot'),
+        url('assets/fonts/fontawesome-webfont.svg'),
+        url('assets/fonts/FontAwesome.otf'),
+        url('assets/fonts/fontawesome-webfont.woff');
 }
  
 @font-face
 {
     font-family:'glyphicons';
-    src: url('fonts/glyphicons-halflings-regular.eot');
-    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/glyphicons-halflings-regular.woff') format('woff'),
-         url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-         url('fonts/glyphicons-halflings-regular.svg#BallparkWeiner') format('svg');
+    src: url('assets/fonts/glyphicons-halflings-regular.eot');
+    src: url('assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('assets/fonts/glyphicons-halflings-regular.svg#BallparkWeiner') format('svg');
 }      
  
 @font-face
 {
     font-family:"Roboto-Bold";
-    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+    src: url('assets/fonts/Roboto-Bold.ttf') format('truetype');
     font-weight:bold;
     font-style:normal;
 }
@@ -37,7 +37,7 @@
     font-style: normal;
    
     font-family:'Roboto-Light';
-    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    src: url('assets/fonts/Roboto-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -45,7 +45,7 @@
 @font-face
 {
     font-family:'Roboto-Medium';
-    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+    src: url('assets/fonts/Roboto-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -79,23 +79,29 @@ body
     background-color: white;
 	width: 100%;
 	height: 6vw;
+	overflow: hidden;
 }
  
 #logo
 {
     margin-left: 12%;
-	height: 3.3vw;
+	height: 3.6vw;
 }
  
  
 #accueil header ul
 {
     display: flex;
- 
+	font-weight: bold;
     list-style:none;
     align-items: center;
 	margin: auto;
-    margin-right: 15%;
+	position: absolute;
+	right: 15%;
+    height: 100%;
+	border-top: 0.3vw transparent solid;
+	border-bottom: 0.3vw transparent solid;
+
 }
  
 #accueil header li
@@ -107,12 +113,14 @@ body
     text-align: center;
     padding-left: 16px;
     padding-right: 16px;
+	height: 100%;
+	border-top: 0.3vw transparent solid;
     
 }
  
 #accueil header li:hover
 {
-    border-top: 3px  #6adcf4  groove;
+    border-top: 0.3vw  #1facca  groove;
     color: #727272;
 }
  
@@ -128,12 +136,72 @@ body
 #background
 {
     width: 100%;
+	min-width: 0;
+}
+
+#background2
+{
+    width: 100%;
+	min-width: 0;
+}
+
+#slideshow
+{
+	animation : slidein 15s ease-in-out infinite alternate;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	width: 200%;
+}
+
+@-webkit-keyframes slidein {
+	
+from {
+	top: 0px;
+	left: 0px;
+	}
+40% {top: 0px;
+	left: 0px;}
+60%{left: -100%;}
+to {
+	left: -100%;
+	}
 }
  
+@keyframes slidein {
+from {
+	top: 0px;
+	left: 0px;
+	}
+40% {top: 0px;
+	left: 0px;}
+60%{left: -100%;}
+to {
+	left: -100%;
+	}
+}
+
+@-moz-keyframes slidein {
+from {
+	top: 0px;
+	left: 0px;
+	}
+40% {top: 0px;
+	left: 0px;}
+60%{left: -100%;}
+to {
+	left: -100%;
+	}
+}
+
+	
+
 section
 {
 	 position: relative;
-	 width: 100%
+	 width: 100%;
+	 overflow: hidden;
 }
  
  
@@ -162,9 +230,7 @@ strong
 {
     font-size: 1.2vw;
 	
- 
-	   
-    padding-bottom: 4%;
+    margin-bottom: 7%;
 }
  
 #description a
@@ -227,6 +293,10 @@ strong
 	top: 32%;
     left: 25%;
     height: 32%;
-    width: 25%;
-   
+    width: 25%; 
+}
+
+#left, #right:hover
+{
+	cursor:pointor;
 }
