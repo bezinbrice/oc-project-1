@@ -300,3 +300,104 @@ strong
 {
 	cursor:pointor;
 }
+
+
+              /*PAGES NOS SERVICES*/
+	
+#services
+{
+    width: 100%;
+	margin-top: 5%;
+}
+
+#services p
+{
+	font-family: 'Roboto-medium';
+	font-size: 1.2vw;
+	line-height: 190%;
+} 
+
+#header-services
+{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+#services h2
+{
+	font-size: 3.5vw;
+	margin-bottom: 1vw;
+}
+
+.line-services
+{
+	width: 11vw;
+}
+
+#header-services p
+{
+	width: 60%;
+	text-align: center;
+	margin-top: 1.4vw;
+}
+
+#main-services
+{
+	display: flex;
+	margin-top: 4%;
+	justify-content: space-around;
+}
+
+#computer-image
+{
+	flex: 1.1;
+	text-align: right;
+}
+
+#computer-image img
+{
+	width: 85%;
+}
+
+#main-services ul
+{
+	flex: 1;
+	list-style: none;
+	margin: 4% 5% 0% 3%;
+}
+
+#main-services li
+{
+	display: flex;
+	font-family: 'Roboto-medium';
+}
+
+.icones-services
+{
+	width: 11%;
+	height: 11%;
+	margin-right: 3.5%;
+}
+
+.list-services
+{
+	text-align: justify;
+	width: 100%;
+}
+
+.list-services h3
+{
+	margin-top: 2%;
+	margin-bottom: 1%;
+	font-size: 1.5vw;
+}
+
+.list-services p
+{
+	width: 100%;
+	margin-top: 1%;
+	padding-right:2%;
+}
