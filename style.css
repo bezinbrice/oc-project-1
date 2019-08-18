@@ -299,7 +299,7 @@ strong
 
 #left, #right:hover
 {
-	cursor:pointor;
+	cursor:pointer;
 }
 
 
@@ -454,7 +454,7 @@ li:last-child
 {
 	color: white;
 	background: #1facca;
-	border-bottom: 0.3vw  #5abbff outset;
+	border-bottom: 0.3vw  #3bcaff outset;
 	
 }
 
@@ -463,7 +463,7 @@ li:last-child
 	text-decoration: none;
 	color: black;
 }
-
+					/* Zone de survole/cliquable étendue*/
 #portfolio a::before
 {
 	content: '';
@@ -498,9 +498,58 @@ li:last-child
 	margin: 2.5%;
 }
 
-#portfolio-pictures img
+.pictures
 {
-	width: 21%;
+	width: 20%;
 	margin: 1.2%;
-	position: relative;
+	position:relative;
+	overflow: hidden;
+}
+
+.stickers
+{
+	width: 100%;
+	height:100%;
+
+}
+
+.pictures strong
+{
+	color: white;
+}
+
+.pictures p
+{
+	
+	background: rgba(38,44,48,0.5);
+	color: white;
+	position: absolute;
+	bottom: -5vw;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	padding-bottom: 1%;
+	line-height:170%;
+}
+
+.eye
+{
+	position: absolute;
+	right: 0.6vw;
+	bottom: -2.8vw;
+	width: 15%;
+}
+					/*Transition sur les images*/
+.pictures:hover p 
+{
+	bottom: 0;
+	left: 0;
+	transition : all 0.7s;
+}
+
+.pictures:hover .eye 
+{
+	right: 0.6vw;
+	bottom: 2.8vw;
+	transition: all 1s;
 }
