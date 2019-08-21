@@ -69,7 +69,6 @@ body
 #accueil
 {
     width: 100%;
-  
 }
  
 #accueil header
@@ -107,12 +106,10 @@ body
     height: 100%;
 	border-top: 0.3vw transparent solid;
 	border-bottom: 0.3vw transparent solid;
-
 }
  
 #accueil header li
 {
-   
     font-size: 0.9vw;
     color:#919191;
     line-height: 6vw;
@@ -121,7 +118,6 @@ body
     padding-right: 16px;
 	height: 100%;
 	border-top: 0.3vw transparent solid;
-    
 }
  
 #accueil header li:hover
@@ -280,7 +276,6 @@ strong
     right: 30%;
     height: 32%;
     width: 25%;
-   
 }
  
 #right_circle
@@ -525,7 +520,6 @@ li:last-child
 
 .pictures p
 {
-	
 	background: rgba(38,44,48,0.5);
 	color: white;
 	position: absolute;
@@ -644,7 +638,6 @@ footer
 
 .formulaire_message
 {
-	
 	height: 12vw;
 }
 
