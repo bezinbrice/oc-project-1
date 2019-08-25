@@ -28,20 +28,20 @@
     font-weight:bold;
     font-style:normal;
 }
- 
 @font-face
 {
     font-family:'Roboto-Black';
     src: url('fonts/Roboto-Black.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-   
+}
+@font-face
+{   
     font-family:'Roboto-Light';
     src: url('assets/fonts/Roboto-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
- 
 @font-face
 {
     font-family:'Roboto-Medium';
@@ -49,6 +49,22 @@
     font-weight: normal;
     font-style: normal;
 }
+<<<<<<< Updated upstream
+=======
+@font-face
+{	
+	font-family:'Roboto-Regular';
+	src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'Lato-Black';
+	src: url('assets/fonts/Lato-Black.ttf') format('truetype');
+}
+>>>>>>> Stashed changes
  
 body
 {
@@ -60,13 +76,13 @@ body
  
             /*PAGE D'ACCUEIL*/
  
-#accueil
+.total-page
 {
     width: 100%;
   
 }
  
-#accueil header
+header
 {
     position: fixed;
     position: -webkit-sticky; /* Safari */
@@ -82,49 +98,50 @@ body
 	overflow: hidden;
 }
  
-#logo
+.header__logo
 {
     margin-left: 12%;
 	height: 3.6vw;
 }
  
- 
-#accueil header ul
+.header__menu
 {
     display: flex;
-	font-weight: bold;
     list-style:none;
     align-items: center;
-	margin: auto;
-	position: absolute;
-	right: 15%;
-    height: 100%;
 	border-top: 0.3vw transparent solid;
 	border-bottom: 0.3vw transparent solid;
+<<<<<<< Updated upstream
 
+=======
+	margin-right: 20%;
+>>>>>>> Stashed changes
 }
  
-#accueil header li
+.menu__page
 {
+<<<<<<< Updated upstream
    
     font-size: 0.9vw;
+=======
+    font-size: 1.1vw;
+>>>>>>> Stashed changes
     color:#919191;
     line-height: 6vw;
     text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-	height: 100%;
+    padding-left: 9%;
+    padding-right: 9%;
 	border-top: 0.3vw transparent solid;
     
 }
  
-#accueil header li:hover
+.menu__page:hover
 {
     border-top: 0.3vw  #1facca  groove;
     color: #727272;
 }
  
-#accueil header a
+.menu__page a
 {
     text-decoration: none;
     color:#919191;
@@ -133,19 +150,7 @@ body
                 /*Accueil Slider*/
  
  
-#background
-{
-    width: 100%;
-	min-width: 0;
-}
-
-#background2
-{
-    width: 100%;
-	min-width: 0;
-}
-
-#slideshow
+.accueil__slide
 {
 	animation : slidein 15s ease-in-out infinite alternate;
 	position: relative;
@@ -153,6 +158,12 @@ body
 	left: 0px;
 	display: flex;
 	width: 200%;
+}
+
+.accueil__slide_background
+{
+    width: 100%;
+	min-width: 0;
 }
 
 @-webkit-keyframes slidein {
@@ -195,8 +206,11 @@ to {
 	}
 }
 
+<<<<<<< Updated upstream
 	
 
+=======
+>>>>>>> Stashed changes
 section
 {
 	 position: relative;
@@ -204,8 +218,12 @@ section
 	 overflow: hidden;
 }
  
+<<<<<<< Updated upstream
  
 #description
+=======
+.accueil__description
+>>>>>>> Stashed changes
 {
     color:white;
 	position: absolute;
@@ -226,7 +244,7 @@ strong
     color:  #5FAFC0;
 }
  
-#description p
+.accueil__description p
 {
     font-size: 1.2vw;
 	font-family: 'Roboto-Bold';
@@ -234,14 +252,14 @@ strong
 	line-height: 100%;
 }
  
-#description a
+.accueil__description a
 {
     font-family:'Roboto-Medium';
     text-decoration: none;
     background-color: #5FAFC0;
     color: white;
-    font-size: 0.9em;
-    padding: 9px 12px;
+	font-size: 1.2vw;
+	padding: 0.8vw 0.9vw;
     border-radius: 4px;
     border-bottom: 2px  #559baa solid;
 }
@@ -249,7 +267,7 @@ strong
  
                 /* Chevrons côté */
 				
-#arrow-container
+.arrow-container
 {
 	position: absolute;
 	top: 45%;
@@ -259,45 +277,47 @@ strong
 	justify-content: space-between;
 	width: 100%;
 }
+
+.arrow-container__circle
+{
+	background: url("assets/images/icones/circle-solid.svg") no-repeat;
+	position: relative;
+}
    
-#left_circle
+.arrow-container__circle-left
 {  
-    background: url("assets/images/icones/circle-solid.svg") no-repeat;
-    position: relative;
     right: 1.5%;
     width: 4.5%;
 }
- 
-#left
-{
-    background:url("assets/images/icones/chevron-left-solid.svg") no-repeat;
-    position: absolute;
-	top: 32%;
-    right: 30%;
-    height: 32%;
-    width: 25%;
-   
-}
- 
-#right_circle
+
+.arrow-container__circle-right
 {  
-    background: url("assets/images/icones/circle-solid.svg") no-repeat;
-    position: relative;
     left: 2%;
     width: 4.5%;
 }
- 
-#right
+
+.circle__arrow-left
 {
-    background:url("assets/images/icones/chevron-right-solid.svg") no-repeat;
+	background:url("assets/images/icones/chevron-left-solid.svg") no-repeat;
+    position: absolute;
+	top: 32%;
+    right: 30%;
+	height: 32%;
+    width: 25%;
+   
+}
+
+.circle__arrow-right
+{
+	background:url("assets/images/icones/chevron-right-solid.svg") no-repeat;
     position: absolute;
 	top: 32%;
     left: 25%;
-    height: 32%;
-    width: 25%; 
+	height: 32%;
+    width: 25%;
 }
 
-#left, #right:hover
+.circle__arrow-left, .circle__arrow-right:hover
 {
 	cursor:pointer;
 }
@@ -305,12 +325,11 @@ strong
 
 				/* Entête block 2 et 3 */
 
-p
+p 
 {
-	font-family: 'Roboto-medium';
+	font-family: 'Roboto-Regular';
 	font-size: 1.2vw;
-	line-height: 190%;
-} 
+}
 
 .header-block
 {
@@ -326,52 +345,55 @@ h2
 	margin-bottom: 1vw;
 }
 
+.header-block__description
+{
+	line-height: 190%;
+	width: 60%;
+	text-align: center;
+	margin-top: 1.4vw;
+} 
+
+
 .line-services
 {
 	width: 11vw;
 }
 
-.header-block p
-{
-	width: 60%;
-	text-align: center;
-	margin-top: 1.4vw;
-}
 
               /* PAGE NOS SERVICES */
 	
-#services
+.block-service-portfolio
 {
     width: 100%;
 	padding-top: 5%;
 }
 
-#main-services
+.main-services
 {
 	display: flex;
 	margin-top: 4%;
 	justify-content: space-around;
 }
 
-#computer-image
+.main-service__computer-img
 {
 	flex: 1.1;
 	text-align: right;
 }
 
-#computer-image img
+.main-service__computer-img_img
 {
 	width: 85%;
 }
 
-#main-services ul
+.main-service__list
 {
 	flex: 1;
 	list-style: none;
 	margin: 4% 5% 0% 3%;
 }
 
-#main-services li
+.main-service__list_item
 {
 	display: flex;
 	font-family: 'Roboto-medium';
@@ -407,13 +429,8 @@ h2
 
               /* PAGE PORTFOLIO */
 			  
-#portfolio
-{
-    width: 100%;
-	padding-top: 5%;
-}
 											/*Entete au niveau du block 2*/
-#portfolio ul
+.portfolio__nav
 {
 	background : #ececec;
 	display:flex;
@@ -427,7 +444,7 @@ h2
 	border-radius: 0.3vw;
 }
 
-#portfolio li
+.portfolio__nav_item
 {
 	padding: 2.5%;
 	width: 8vw;
@@ -437,12 +454,12 @@ h2
 	border-bottom: 0.3vw transparent outset;
 }
 
-li:first-child
+.portfolio__nav_item:first-child
 {
 	border-radius: 0.3vw 0 0 0.3vw;
 }
 
-li:last-child
+.portfolio__nav_item:last-child
 {
 	border-radius: 0 0.3vw 0.3vw 0;
 }
@@ -450,7 +467,7 @@ li:last-child
 
 					/* Menu interactif */
 					
-#portfolio li:hover
+.portfolio__nav_item:hover
 {
 	color: white;
 	background: #1facca;
@@ -488,9 +505,9 @@ li:last-child
     bottom: -33%;
 }
 
-#portfolio li:hover .triangle {display:block}
+.portfolio__nav_item:hover .triangle {display:block}
 
-#portfolio-pictures
+.portfolio-pictures
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -552,4 +569,461 @@ li:last-child
 	right: 0.6vw;
 	bottom: 2.8vw;
 	transition: all 1s;
+<<<<<<< Updated upstream
+=======
+}
+
+				/* PAGE CONTACT */
+
+footer
+{
+	width: 100%;
+	padding-top: 6%;
+}
+
+.contact-block
+{
+	width: 100%;
+	height: 50vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.contact-block__map
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.contact-block__formulaire
+{
+	position: absolute;
+	z-index: 5;
+	top: 4vw;
+	right: 10vw;
+	width: 23%;
+	padding: 0.9vw 1.5vw;
+	border: 1px #c7c6c6 solid;
+	box-shadow: 0 0 1px 0 #0000005c;
+	background: rgba(242,242,242,0.9);
+	display: flex;
+	flex-direction: column;
+}
+
+.formulaire__title
+{
+	font-size: 1.7vw;
+	margin-top: 1.2vw;
+	margin-bottom: 0;
+	font-family: 'Roboto-medium';
+}
+
+.formulaire__adress_title
+{
+	font-family:'Roboto-Bold';
+	font-size: 1.1vw;
+}
+
+.formulaire__adress
+{
+	line-height: 150%;
+	font-size: 1vw;
+	margin: 0.7vw 0;
+}
+
+.formulaire__adress_underscore
+{
+	border-bottom: 0.1vw black dotted;
+	background-color: transparent;
+}
+
+.formulaire__name-email-subject
+{
+	width: 100%;
+	padding: 2.5% 3.5%;
+	border-radius: 0.3vw;
+	box-sizing: border-box;
+	border: 0.5px gray solid;
+	font-family: 'Roboto-Medium';
+	font-size: 1vw;
+}
+
+.formulaire__message
+{
+	height: 12vw;
+}
+
+.formulaire__send-button
+{
+	font-family:'Roboto-Medium';
+    background-color: #5FAFC0;
+    color: white;
+    font-size: 0.9em;
+    padding: 9px 12px;
+    border-radius: 4px;
+	border-style: none;
+	box-shadow: 0px 2px 0px #2b94ab;
+}
+
+@media screen and (max-width: 850px)	/* ----------- 850p ----------- */
+{
+	header
+	{
+		height: 7vw;
+	}
+	.header__menu
+	{
+		padding-right: 5%;
+	}
+		 
+	.menu__page
+	{
+		font-size: 1.8vw;
+		line-height: 7vw;
+	}
+	
+	.accueil__description
+	{
+		position: absolute;
+		top: 10%;
+		left: 12%;
+		width: 48%;
+		font-size: 2.2vw; 
+	}
+	 
+	.accueil__description p
+	{
+		font-size: 1.9vw;
+		margin-top: 2%;
+	}
+	 
+	.accueil__description a
+	{
+		font-size: 2vw;
+		padding: 1.3vw;
+	}
+	
+				/*Header Block 2 et 3 */
+	
+	p 
+	{
+		font-size: 1.8vw;
+	}
+
+	h2
+	{
+		font-size: 4vw;
+	}
+
+
+	.line-services
+	{
+		width: 16vw;
+	}
+
+				  /* PAGE NOS SERVICES */
+		
+	.main-service__computer-img
+	{
+		flex: 1;
+		padding-top: 5%;
+	}
+	
+	main-service__computer-img_img
+	{
+		width: 100%;
+		padding-left: 6%;
+	}
+
+	.icones-services
+	{
+		width: 16%;
+	}
+	
+	.main-service__list
+	{
+	flex: 1.2;
+	padding-left: 0;
+	}
+	
+	.list-services h3
+	{
+		font-size: 1.9vw;
+	}
+		
+				  /* PAGE PORTFOLIO */
+				  			  
+	.portfolio__nav
+	{
+		font-size: 1.7vw;
+		width: 50%;
+	}
+
+	.portfolio__nav_item
+	{
+		width: 10vw;
+	}
+
+						/* Animation petite fleche */
+	.triangle
+	{
+		bottom: -25%;
+	}
+	
+	.pictures p
+	{
+		bottom: -7vw;
+		line-height:150%;
+	}
+
+	.eye
+	{
+		position: absolute;
+		right: 0.6vw;
+		bottom: -4.8vw;
+		width: 15%;
+	}
+						/*Transition sur les images*/
+	.pictures:hover p 
+	{
+		bottom: 0;
+		left: 0;
+		transition : all 0.9s;
+	}
+
+	.pictures:hover .eye 
+	{
+		right: 0.6vw;
+		bottom: 4vw;
+		transition: all 1.2s;
+	}
+	
+					/* PAGE CONTACT */
+	
+	.contact-block
+	{
+		height: 65vw;
+	}	
+	
+	.contact-block__formulaire
+	{
+		width: 35%;
+		top: 2vw;
+	}
+
+	.formulaire__title
+	{
+		font-size: 2.7vw;
+	}
+	
+	.formulaire__adress_title
+	{
+		font-size: 1.9vw;
+	}
+
+	.formulaire__adress
+	{
+		font-size: 2vw;
+	}
+
+	.formulaire__name-email-subject
+	{
+		font-size: 1.7vw;
+	}
+
+	.formulaire__message
+	{
+		height: 16vw;
+	}
+
+}
+
+@media screen and (max-width: 480px) /* ----------- 480p ----------- */
+{
+	header
+	{
+		height: 8vw;
+		justify-content:space-around;
+	}
+	
+	.header__logo
+	{
+		margin-left: 2%;
+		height: 5vw;
+	}
+	
+	.header__menu
+	{
+		padding:0;
+		justify-content: space-around;
+		margin-right: 0;
+		width: 100%;
+	}
+	
+	.menu__page
+	{
+		font-size: 2.5vw;
+		line-height: 8vw;
+		padding-left: 2vw;
+		padding-right: 2vw;
+	}
+	
+	.accueil__description
+	{
+		position: absolute;
+		top: 12%;
+		left: 12%;
+		width: 70%;
+		font-size: 2.8vw; 
+		text-shadow: 1px 1px 1px black;
+	}
+	 
+	.accueil__description p
+	{
+		font-size: 2.5vw;
+		margin-top: 2%;
+	}
+	 
+	.bouton-infos
+	{
+		display: none;
+	}
+	
+	.arrow-container
+	{
+		display: none;
+	}
+				/*Header Block 2 et 3 */
+	p 
+	{
+		font-size: 2.7vw;
+	}
+
+	h2
+	{
+		font-size: 5vw;
+	}
+
+	.line-services
+	{
+		width: 20vw;
+	}
+	
+	.header-block__description
+	{
+		width: 80%;
+	}
+
+				  /* PAGE NOS SERVICES */
+		
+	.main-service__computer-img
+	{
+		display: none;
+	}
+	
+	.icones-services
+	{
+		width: 12%;
+	}
+	
+	
+	.list-services h3
+	{
+		font-size: 3.2vw;
+	}
+		
+				  /* PAGE PORTFOLIO */
+				  			  
+	.portfolio__nav
+	{
+		font-size: 2.5vw;
+		width: 70%;
+	}
+
+	.portfolio__nav_item
+	{
+		width: 14vw;
+	}
+
+						/* Animation petite fleche */
+	.triangle
+	{
+		bottom: -25%;
+	}
+	
+	.pictures
+	{
+		width: 40%;
+		margin: 5%;
+		overflow: visible;
+	}
+	
+	.pictures p
+	{
+		bottom: -8vw;
+		line-height:150%;
+	}
+
+	.eye
+	{
+		position: absolute;
+		right: 0.6vw;
+		bottom: -3.5vw;
+		width: 20%;
+	}
+						/*Transition sur les images*/
+	.pictures:hover p 
+	{
+		bottom: -8vw;
+	}
+
+	.pictures:hover .eye 
+	{
+		right: 0.6vw;
+		bottom: -3.5vw;
+	}
+	
+					/* PAGE CONTACT */
+	
+	.contact-block
+	{
+		height: 85vw;
+	}	
+	
+	.contact-block__formulaire
+	{
+		width: 45%;
+		top: 2vw;
+	}
+
+	.formulaire__title
+	{
+		font-size: 3.7vw;
+	}
+	
+	.formulaire__adress_title
+	{
+		font-size: 3vw;
+	}
+
+	.formulaire__adress
+	{
+		font-size: 2.8vw;
+	}
+
+	.formulaire__name-email-subject
+	{
+		font-size: 2.5vw;
+	}
+
+	.formulaire__message
+	{
+		height: 21vw;
+	}
+
+>>>>>>> Stashed changes
 }

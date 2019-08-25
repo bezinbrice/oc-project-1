@@ -2,62 +2,63 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css"/>
- 
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-miniature.svg" />
         <title>WebAgency</title>
     </head>
     <body>
-        <div id="accueil">
+        <div id="accueil" class="total-page">
             <header>
-                <img id="logo" src="assets/images/logo.png" alt="Logo WebAgency" />
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <img class="header__logo" src="assets/images/logo.svg" alt="Logo WebAgency" />
+                <ul class="header__menu">
+                    <li class="menu__page"><a href="#accueil">Accueil</a></li>
+                    <li class="menu__page"><a href="#services">Services</a></li>
+                    <li class="menu__page"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu__page"><a href="#contact">Contact</a></li>
                 </ul>
             </header>
-            <section>
-				<div id="slideshow">
-					<img id="background" src="assets/images/slider/bg1.jpg" alt="Jeune fille souriante" />   
-					<img id="background2" src="assets/images/slider/bg2.jpg" alt="Jeune garçon criant" />   
+            <section class="accueil">
+				<div class="accueil__slide">
+					<img class="accueil__slide_background" src="assets/images/slider/bg1.jpg" alt="Jeune fille souriante" />   
+					<img class="accueil__slide_background" src="assets/images/slider/bg2.jpg" alt="Jeune garçon criant" />   
 				</div>
-                <div id="description">
+                <div class="accueil__description">
                     <h1><strong>WebAgency</strong> : L'agence de tous vos projets !</h1>
                     <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                    <a href="#service" class="bouton_infos">Plus d'infos</a>
+                    <a href="#service" class="bouton-infos">Plus d'infos</a>
                 </div>
-                <div id="arrow-container">
-                    <div id="left_circle"><a href="#"><div id="left"></div></a></div>
-                    <div id="right_circle"><a href="#"><div id="right"></div></a></div>
+                <div class="arrow-container">
+                    <div class="arrow-container__circle arrow-container__circle-left"><a href="#"><div class="circle__arrow-left"></div></a></div>
+                    <div class="arrow-container__circle arrow-container__circle-right"><a href="#"><div class="circle__arrow-right"></div></a></div>
                 </div>
             </section>
-			<section id="services">
+			<section id="services" class="block-service-portfolio">
 				<div class="header-block">
 					<h2>NOS SERVICES</h2>
 					<img class="line-services" src="assets/images/icones/line-services.svg" alt="petite icone" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est rutrum, venenatis libero molestie, sodales augue. Nam ac aliquet enim</p>
+					<p class="header-block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est rutrum, venenatis libero molestie, sodales augue. Nam ac aliquet enim</p>
 				</div>
-				<div id="main-services">
-					<div id="computer-image">
-						<img src="assets/images/main-feature.png" alt="Ordinateur avec images">
+				<div class="main-services">
+					<div class="main-service__computer-img">
+						<img class="main-service__computer-img_img" src="assets/images/main-feature.png" alt="Ordinateur avec images">
 					</div>
-					<ul>
-						<li>
+					<ul class="main-service__list">
+						<li class="main-service__list_item">
 							<img class="icones-services" src="assets/images/icones/design-pictures.svg" alt="petite icone" />
 							<div class="list-services">
 								<h3>UX design</h3> 
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est rutrum, venenatis libero molestie, sodales augue. Nam ac aliquet enim.</p>
 							</div>
 						</li>
-						<li>
+						<li class="main-service__list_item">
 							<img class="icones-services" src="assets/images/icones/design-pictures2.svg" alt="petite icone" />
 							<div class="list-services">
 								<h3>UI design</h3> 
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est rutrum, venenatis libero molestie, sodales augue. Nam ac aliquet enim.</p>
 							</div>	
 						</li>
-						<li>
+						<li class="main-service__list_item">
 							<img class="icones-services" src="assets/images/icones/design-pictures3.svg" alt="petite icone" />
 							<div class="list-services">
 								<h3>SEO</h3> 
@@ -67,19 +68,19 @@
 					</ul>
 				</div>
 			</section> 
-			<section id="portfolio">
+			<section id="portfolio" class="block-service-portfolio">
 			   <div class="header-block">
 					<h2>NOS PROJETS</h2>
 					<img class="line-services" src="assets/images/icones/line-services.svg" alt="petite icone" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est rutrum, venenatis libero molestie, sodales augue. Nam ac aliquet enim</p>
+					<p class="header-block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet est rutrum, venenatis libero molestie, sodales augue. Nam ac aliquet enim</p>
 				</div>
-				<ul>
-					<li><a href="#">All Works</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>		<!-- Petites icones qui apparaitront au sulvol-->
-					<li><a href="#">Creative</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
-					<li><a href="#">Corporate</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
-					<li><a href="#">Portfolio</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
+				<ul class="portfolio__nav">
+					<li class="portfolio__nav_item"><a href="#">All Works</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>		<!-- Petites icones qui apparaitront au sulvol-->
+					<li class="portfolio__nav_item"><a href="#">Creative</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
+					<li class="portfolio__nav_item"><a href="#">Corporate</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
+					<li class="portfolio__nav_item"><a href="#">Portfolio</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
 				</ul>
-				<div id="portfolio-pictures">
+				<div class="portfolio-pictures">
 					<div class="pictures">
 						<img class="stickers" src="assets/images/portfolio/01.jpg" alt="projet 1" />
 						<p><strong>Creative Ipsum</strong><br/>Lorem Ipsum Dolor Sit</p>
@@ -92,7 +93,7 @@
 					</div>
 					<div class="pictures">
 						<img class="stickers" src="assets/images/portfolio/03.jpg" alt="projet 3" />
-						<p><strong>Corporate Pompadour</strong><br/>Lorem Ipsum Dolor Sit</p>
+						<p><strong>Pompadour Corp</strong><br/>Lorem Ipsum Dolor Sit</p>
 						<img class="eye" src="assets/images/icones/eye.svg" alt="" />
 					</div>
 					<div class="pictures">
@@ -122,8 +123,36 @@
 					</div>
 				</div>
 			</section>
+<<<<<<< Updated upstream
 			<footer>
 		   
+=======
+			<footer id="contact">
+				<div class="contact-block">
+					<iframe class="contact-block__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.2323457480634!2d2.3495037!3d48.8728471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1566203783104!5m2!1sfr!2sfr" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="contact-block__formulaire">
+						<h3 class="formulaire__title">Contact Info</h3>
+						<p class="formulaire__adress"><span class="formulaire__adress_title">WebAgency SAS</span><br/>25 Rue d'Hauteville 75010 Paris <br /> <mark class="formulaire__adress_underscore">Tel:</mark> 01 02 03 04 05</p>
+						<form class="formulaire__list" method="post" action="#">
+							<p>
+								<input class="formulaire__name-email-subject" type="text" name="name" id="name" placeholder="Name" size="30" maxlength="50" />
+							</p>
+							<p>
+								<input class="formulaire__name-email-subject" type="email" name="email" id="email" placeholder="Email" size="30" maxlength="50" />
+							</p>
+							<p>
+								<input class="formulaire__name-email-subject" type="text" name="subject" id="subject" placeholder="Subject" size="30" maxlength="50" />
+							</p>
+							<p>
+								<textarea class="formulaire__name-email-subject formulaire__message"  name="message" id="message" placeholder="Message" maxlength="1000"></textarea>
+							</p>
+							<p>
+								<input class="formulaire__send-button" type="submit" value="Send Message" />
+							</p>
+						</form>
+					</div>
+				</div>
+>>>>>>> Stashed changes
 			</footer>
         </div>
     </body>
