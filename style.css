@@ -49,8 +49,6 @@
     font-weight: normal;
     font-style: normal;
 }
-<<<<<<< Updated upstream
-=======
 @font-face
 {	
 	font-family:'Roboto-Regular';
@@ -64,11 +62,10 @@
 	font-family: 'Lato-Black';
 	src: url('assets/fonts/Lato-Black.ttf') format('truetype');
 }
->>>>>>> Stashed changes
  
 body
 {
-    font-family:'Roboto-Bold','Trebuchet MS', Arial, sans-serif;
+    font-family:'Roboto-Bold', 'Lato-Black', 'Trebuchet MS', Arial, sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
@@ -79,7 +76,6 @@ body
 .total-page
 {
     width: 100%;
-  
 }
  
 header
@@ -111,28 +107,18 @@ header
     align-items: center;
 	border-top: 0.3vw transparent solid;
 	border-bottom: 0.3vw transparent solid;
-<<<<<<< Updated upstream
-
-=======
 	margin-right: 20%;
->>>>>>> Stashed changes
 }
  
 .menu__page
 {
-<<<<<<< Updated upstream
-   
-    font-size: 0.9vw;
-=======
     font-size: 1.1vw;
->>>>>>> Stashed changes
     color:#919191;
     line-height: 6vw;
     text-align: center;
     padding-left: 9%;
     padding-right: 9%;
 	border-top: 0.3vw transparent solid;
-    
 }
  
 .menu__page:hover
@@ -206,11 +192,6 @@ to {
 	}
 }
 
-<<<<<<< Updated upstream
-	
-
-=======
->>>>>>> Stashed changes
 section
 {
 	 position: relative;
@@ -218,12 +199,7 @@ section
 	 overflow: hidden;
 }
  
-<<<<<<< Updated upstream
- 
-#description
-=======
 .accueil__description
->>>>>>> Stashed changes
 {
     color:white;
 	position: absolute;
@@ -304,7 +280,6 @@ strong
     right: 30%;
 	height: 32%;
     width: 25%;
-   
 }
 
 .circle__arrow-right
@@ -511,6 +486,7 @@ h2
 {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-content: space-around;
 	margin: 2.5%;
 }
@@ -537,7 +513,6 @@ h2
 
 .pictures p
 {
-	
 	background: rgba(38,44,48,0.5);
 	color: white;
 	position: absolute;
@@ -569,8 +544,6 @@ h2
 	right: 0.6vw;
 	bottom: 2.8vw;
 	transition: all 1s;
-<<<<<<< Updated upstream
-=======
 }
 
 				/* PAGE CONTACT */
@@ -1025,5 +998,4 @@ footer
 		height: 21vw;
 	}
 
->>>>>>> Stashed changes
 }
