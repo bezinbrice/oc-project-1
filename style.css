@@ -107,7 +107,7 @@ header
     align-items: center;
 	border-top: 0.3vw transparent solid;
 	border-bottom: 0.3vw transparent solid;
-	margin-right: 20%;
+	margin-right: 10%;
 }
  
 .menu__page
@@ -116,8 +116,8 @@ header
     color:#919191;
     line-height: 6vw;
     text-align: center;
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 2vw;
+    padding-right: 2vw;
 	border-top: 0.3vw transparent solid;
 }
  
@@ -135,6 +135,10 @@ header
  
                 /*Accueil Slider*/
  
+ .accueil
+ {
+	width: 100%;
+ }
  
 .accueil__slide
 {
@@ -149,7 +153,8 @@ header
 .accueil__slide_background
 {
     width: 100%;
-	min-width: 0;
+	min-width: 50%;
+	
 }
 
 @-webkit-keyframes slidein {
@@ -326,6 +331,7 @@ h2
 	width: 60%;
 	text-align: center;
 	margin-top: 1.4vw;
+	text-align: justify;
 } 
 
 
@@ -399,6 +405,7 @@ h2
 	width: 100%;
 	margin-top: 1%;
 	padding-right:2%;
+	line-height: 130%;
 }
 
 
@@ -570,6 +577,30 @@ footer
 	z-index: 1;
 	top: 0;
 	left: 0;
+	border: 0px; 
+	filter: blur(0.5px);
+	-webkit-filter: blur(0.5px);
+}
+
+.blur
+{		
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background: rgba(109,172,255,0.5);	
+}
+
+.blur:active
+{
+	display: none;
+}
+
+.blur:focus
+{
+	display: none;
 }
 
 .contact-block__formulaire
@@ -819,7 +850,7 @@ footer
 {
 	header
 	{
-		height: 8vw;
+		height: 9vw;
 		justify-content:space-around;
 	}
 	
@@ -840,25 +871,56 @@ footer
 	.menu__page
 	{
 		font-size: 2.5vw;
-		line-height: 8vw;
+		line-height: 9vw;
 		padding-left: 2vw;
 		padding-right: 2vw;
 	}
 	
+	.accueil__slide
+	{
+		opacity: 0.95;
+	}
+	
+	.accueil__slide_background
+	{
+		width: 150%;
+		min-width: 100%;
+	}
+	
+	.accueil__slide
+	{
+		animation : slidein 15s ease-in-out infinite alternate;
+	}
+
+	
+	@keyframes slidein {
+	from {
+		top: 0px;
+		left: -40%;
+		}
+	40% {top: 0px;
+		left: -40%;}
+	60%{left: -255%;}
+	to {
+		left: -255%;
+		}
+	}
+		
 	.accueil__description
 	{
 		position: absolute;
-		top: 12%;
-		left: 12%;
-		width: 70%;
-		font-size: 2.8vw; 
+		top: 25%;
+		left: 15%;
+		width: 75%;
+		font-size: 3.9vw; 
 		text-shadow: 1px 1px 1px black;
 	}
 	 
 	.accueil__description p
 	{
-		font-size: 2.5vw;
+		font-size: 3.5vw;
 		margin-top: 2%;
+		line-height: 130%;
 	}
 	 
 	.bouton-infos
@@ -870,6 +932,8 @@ footer
 	{
 		display: none;
 	}
+	
+
 				/*Header Block 2 et 3 */
 	p 
 	{
@@ -900,9 +964,14 @@ footer
 	
 	.icones-services
 	{
-		width: 12%;
+		display: none;
 	}
 	
+	.main-service__list
+	{
+		padding-left: 0;
+		margin: 5% 5% 0% 5%;
+	}
 	
 	.list-services h3
 	{
@@ -910,7 +979,7 @@ footer
 	}
 		
 				  /* PAGE PORTFOLIO */
-				  			  
+				  
 	.portfolio__nav
 	{
 		font-size: 2.5vw;
@@ -923,6 +992,7 @@ footer
 	}
 
 						/* Animation petite fleche */
+						
 	.triangle
 	{
 		bottom: -25%;
@@ -930,14 +1000,15 @@ footer
 	
 	.pictures
 	{
-		width: 40%;
-		margin: 5%;
+		width: 70%;
+		margin: 7%;
 		overflow: visible;
 	}
 	
 	.pictures p
 	{
-		bottom: -8vw;
+		bottom: -10vw;
+		font-size: 3.2vw;
 		line-height:150%;
 	}
 
@@ -945,32 +1016,41 @@ footer
 	{
 		position: absolute;
 		right: 0.6vw;
-		bottom: -3.5vw;
+		bottom: -6.5vw;
 		width: 20%;
 	}
-						/*Transition sur les images*/
+	
 	.pictures:hover p 
 	{
-		bottom: -8vw;
+		bottom: -10vw;
+		font-size: 3.2vw;
+		line-height:150%;
 	}
 
 	.pictures:hover .eye 
 	{
 		right: 0.6vw;
-		bottom: -3.5vw;
+		bottom: -6.5vw;
+		width: 20%;
 	}
-	
+
 					/* PAGE CONTACT */
 	
+	footer
+	{
+		
+		padding-top: 8%;
+	}
+
 	.contact-block
 	{
-		height: 85vw;
+		height: 120vw;
 	}	
 	
 	.contact-block__formulaire
 	{
-		width: 45%;
-		top: 2vw;
+		width: 50%;
+		top: 5vw;
 	}
 
 	.formulaire__title
