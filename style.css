@@ -591,16 +591,7 @@ footer
 	top: 0;
 	left: 0;
 	background: rgba(109,172,255,0.5);	
-}
-
-.blur:active
-{
-	display: none;
-}
-
-.blur:focus
-{
-	display: none;
+	pointer-events:none
 }
 
 .contact-block__formulaire
