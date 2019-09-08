@@ -5,23 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css"/>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-miniature.svg" />
-        <title>WebAgency</title>
+		<meta property="og:title" content="WebAgency : L'agence de tous vos projets !"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="https://brice.espar.eu/"/>
+		<meta property="og:image" content="https://brice.espar.eu/assets/images/portfolio/02.jpg" />
+		<meta property="og:description" content="Vous avez un projet web ? La WebAgency vous aide à le réaliser ! Que vous soyez une entreprise ou un particlier, votre site web est le lien entre vous et votre visiteur. Envie de jeter un oeil à nos création ?">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://brice.espar.eu/">
+		<meta property="twitter:title" content="WebAgency : L'agence de tous vos projets !">
+		<meta property="twitter:description" content="Vous avez un projet web ? La WebAgency vous aide à le réaliser ! Que vous soyez une entreprise ou un particlier, votre site web est le lien entre vous et votre visiteur. Envie de jeter un oeil à nos création ?" />
+		<meta property="twitter:image" content="https://brice.espar.eu/assets/images/portfolio/02.jpg" />
+		<title>WebAgency</title>
     </head>
     <body>
-        <div id="accueil" class="total-page">
+        <main id="accueil" class="total-page">
             <header>
                 <img class="header__logo" src="assets/images/logo.svg" alt="Logo WebAgency" />
-                <ul class="header__menu">
-                    <li class="menu__page"><a href="#accueil">Accueil</a></li>
-                    <li class="menu__page"><a href="#services">Services</a></li>
-                    <li class="menu__page"><a href="#portfolio">Portfolio</a></li>
-                    <li class="menu__page"><a href="#contact">Contact</a></li>
-                </ul>
+                <nav class="header__nav">
+					<ul class="header__nav_menu">
+						<li class="menu__page"><a href="#accueil">Accueil</a></li>
+						<li class="menu__page"><a href="#services">Services</a></li>
+						<li class="menu__page"><a href="#portfolio">Portfolio</a></li>
+						<li class="menu__page"><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
             </header>
             <section class="accueil">
 				<div class="accueil__slide">
-					<img class="accueil__slide_background" src="assets/images/slider/bg1.jpg" alt="Jeune fille souriante" />   
-					<img class="accueil__slide_background" src="assets/images/slider/bg2.jpg" alt="Jeune garçon criant" />   
+					<div class="accueil__slide_background"><img class="accueil__slide_background_img" src="assets/images/slider/bg1.jpg" alt="Jeune fille souriante" /></div>  
+					<div class="accueil__slide_background"><img class="accueil__slide_background_img" src="assets/images/slider/bg2.jpg" alt="Jeune garçon criant" /></div>
 				</div>
                 <div class="accueil__description">
                     <h1><strong>WebAgency</strong> : L'agence de tous vos projets !</h1>
@@ -74,12 +86,14 @@
 					<img class="line-services" src="assets/images/icones/line-services.svg" alt="petite icone" />
 					<p class="header-block__description">De nombreux professionnels ont déjà fait confiance à la WebAgency pour les représenter. Que diriez-vous d'y jeter un œil ?</p>
 				</div>
-				<ul class="portfolio__nav">
-					<li class="portfolio__nav_item"><a href="#">All Works</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>		<!-- Petites icones qui apparaitront au sulvol-->
-					<li class="portfolio__nav_item"><a href="#">Creative</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
-					<li class="portfolio__nav_item"><a href="#">Corporate</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
-					<li class="portfolio__nav_item"><a href="#">Portfolio</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
-				</ul>
+				<nav class="portfolio__menu">
+					<ul class="portfolio__nav">
+						<li class="portfolio__nav_item"><a href="#">All Works</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>		<!-- Petites icones qui apparaitront au sulvol-->
+						<li class="portfolio__nav_item"><a href="#">Creative</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
+						<li class="portfolio__nav_item"><a href="#">Corporate</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
+						<li class="portfolio__nav_item"><a href="#">Portfolio</a><img class="triangle" src="assets/images/icones/triangle.svg" alt="#" /></li>
+					</ul>
+				</nav>
 				<div class="portfolio-pictures">
 					<div class="pictures">
 						<img class="stickers" src="assets/images/portfolio/01.jpg" alt="projet 1" />
@@ -126,7 +140,7 @@
 			<footer id="contact">
 				<div class="contact-block">
 					<iframe class="contact-block__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.2323457480634!2d2.3495037!3d48.8728471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1566203783104!5m2!1sfr!2sfr" width="900" height="600" style="border:0" allowfullscreen></iframe>
-					<div class="blur"></div>
+					<div class="contact-block__map-overlaye"></div>
 					<div class="contact-block__formulaire">
 						<h3 class="formulaire__title">Contact Info</h3>
 						<p class="formulaire__adress"><span class="formulaire__adress_title">WebAgency SAS</span><br/>25 Rue d'Hauteville 75010 Paris <br /> <mark class="formulaire__adress_underscore">Tel:</mark> 01 02 03 04 05</p>
@@ -150,7 +164,6 @@
 					</div>
 				</div>
 			</footer>
-        </div>
+        </main>
     </body>
-   
 </html>
