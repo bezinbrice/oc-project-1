@@ -291,7 +291,7 @@ strong
 {
 	background:url("assets/images/icones/chevron-left-solid.svg") no-repeat;
     position: absolute;
-	top: 32%;
+	top: 34%;
     right: 30%;
 	height: 32%;
     width: 25%;
@@ -301,7 +301,7 @@ strong
 {
 	background:url("assets/images/icones/chevron-right-solid.svg") no-repeat;
     position: absolute;
-	top: 32%;
+	top: 34%;
     left: 25%;
 	height: 32%;
     width: 25%;
@@ -694,7 +694,7 @@ footer
 	.accueil__description
 	{
 		position: absolute;
-		top: 10%;
+		top: 14%;
 		left: 12%;
 		width: 48%;
 		font-size: 2.2vw; 
@@ -1068,8 +1068,8 @@ footer
 	
 	.pictures:hover p 
 	{
-		bottom: -10vw;
-		font-size: 3.2vw;
+		bottom: -12vw;
+		font-size: 4vw;
 		line-height:150%;
 	}
 
